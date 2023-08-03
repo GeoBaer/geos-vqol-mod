@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "de.geobaer.gvqol.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "EnchantmentsMixin",
+    "ItemStackMixin",
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

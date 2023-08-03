@@ -1,41 +1,33 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "geo-vqol",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Geos VQoL Mod",
+	"description": "A Mod adding some Vanilla-Based Quality of Life Elements.",
 	"authors": [
-		"Me!"
+		"GeoBaer"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/geos-vqol-mod/",
+		"sources": "https://github.com/GeoBaer/geos-vqol-mod/",
+		"issues": "https://github.com/GeoBaer/geos-vqol-mod/issues"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/geo-vqol/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"de.geobaer.gvqol.Initializer"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"geo-vqol.mixins.json"
 	],
+	"accessWidener": "geo-vqol.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
