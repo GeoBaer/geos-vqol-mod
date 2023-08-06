@@ -1,4 +1,4 @@
-# Geo's Vanilla QoL Mod
+# Geos Vanilla QoL Mod
 
 ## What is this?
 
